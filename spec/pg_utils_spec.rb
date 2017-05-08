@@ -5,7 +5,7 @@ RSpec.describe PgUtils do
     expect(PgUtils::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "has a default config file path" do
+    expect(PgUtils::Config::DEFAULTS).to eq({config_file: "pg_utils.yml"})
   end
 end
