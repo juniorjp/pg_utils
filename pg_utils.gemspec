@@ -37,5 +37,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rubocop", "~> 0.4"
+  spec.add_development_dependency "net-ssh", "~> 4.1.0"
   spec.add_development_dependency "net-scp", "~> 1.2"
 end
