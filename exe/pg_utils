@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'pg_utils'
+
+PgUtils.configure_with('config/pg_utils.yml')
+if ARGV.first
+  str = ARGV.first.strip
+  if str == 'backup'
+    ::PgUtils::Backup.new().run()
+  end
+end

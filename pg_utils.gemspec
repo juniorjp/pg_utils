@@ -4,6 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'pg_utils/version'
 require 'pg_utils/configuration'
 require 'pg_utils/backup'
+require 'load_tasks'
 require 'yaml'
 
 Gem::Specification.new do |spec|
