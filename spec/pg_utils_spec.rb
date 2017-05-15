@@ -10,4 +10,11 @@ RSpec.describe PgUtils do
     configuration = PgUtils.configuration
     expect(configuration.ssh_host).to eq '3.3.3.3'
   end
+
+  it 'yields config' do
+    PgUtils.configure do |config|
+      expect(config).to be_a(PgUtils::Configuration)
+    end
+  end
+
 end
