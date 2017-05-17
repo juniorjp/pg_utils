@@ -7,5 +7,7 @@ if ARGV.first
   str = ARGV.first.strip
   if str == 'backup'
     ::PgUtils::Backup.new().run()
+  elsif
+    ::PgUtils::Restore.new().run()
   end
 end

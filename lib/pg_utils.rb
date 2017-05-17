@@ -1,6 +1,7 @@
 require 'pg_utils/version'
 require 'pg_utils/configuration'
 require 'pg_utils/backup'
+require 'pg_utils/restore'
 require 'yaml'
 
 # main module
