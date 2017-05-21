@@ -38,7 +38,7 @@ Then Download your database from the remote server using:
 
     pg_utils backup
     
-Then restore the most recent backup using:
+Then restore the most recent backup in your local machine using:
     
     pg_utils restore
 
