@@ -1,6 +1,6 @@
 # PgUtils
 
-Easy backup and restore for your remote PostgreSQL database.
+Easily backup and download your remote PostgreSQL database. Restore the backup in your local database.
 ## Installation
 
 Add this line to your application's Gemfile:
