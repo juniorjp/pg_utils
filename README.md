@@ -34,14 +34,21 @@ Add your config file in config/pg_utils.yml
     local_database_username: 'dev'
     local_database_password: '555'
 
-Then Download your database from the remote server using:
+### Backup
+Download your database from the remote server using:
 
     pg_utils backup
     
-Then restore the most recent backup in your local machine using:
+The above command generates a backup in the remote machine and saves it in the `remote_backup_folder`.
+
+It also downloads the backup file to your local machine `local_folder`. 
+    
+### Restore    
+You can also restore the most recent backup in your local machine using:
     
     pg_utils restore
 
+The restore command gets the most recent backup in the `local_folder` and runs a restore command targeting the `local_database`.
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/juniorjp/pg_utils. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
