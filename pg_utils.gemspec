@@ -2,10 +2,6 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'pg_utils/version'
-require 'pg_utils/configuration'
-require 'pg_utils/backup'
-require 'pg_utils/restore'
-require 'yaml'
 
 Gem::Specification.new do |spec|
   spec.name          = "pg_utils"
@@ -38,6 +34,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rubocop", "~> 0.4"
-  spec.add_development_dependency "net-ssh", "~> 4.1.0"
-  spec.add_development_dependency "net-scp", "~> 1.2"
+  spec.add_dependency "net-ssh", "~> 4.1.0"
+  spec.add_dependency "net-scp", "~> 1.2"
 end
